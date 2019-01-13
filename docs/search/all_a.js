@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['command',['command',['../d0/d22/namespace_vector_network_project_1_1_framework_1_1command.xhtml',1,'VectorNetworkProject::Framework']]],
-  ['framework',['Framework',['../d8/db3/namespace_vector_network_project_1_1_framework.xhtml',1,'VectorNetworkProject']]],
-  ['util',['util',['../d4/dff/namespace_vector_network_project_1_1_framework_1_1util.xhtml',1,'VectorNetworkProject::Framework']]],
-  ['vectornetworkproject',['VectorNetworkProject',['../d4/d19/namespace_vector_network_project.xhtml',1,'']]]
+  ['setoption',['setOption',['../d1/d9d/class_vector_network_project_1_1_framework_1_1util_1_1_constants.xhtml#a8e2af32633104df87ecd6c9449e8c3d0',1,'VectorNetworkProject::Framework::util::Constants']]]
 ];

@@ -1,11 +1,12 @@
 var indexSectionsWithContent =
 {
-  0: "$_cefgiopsv",
+  0: "$_cefgioprsv",
   1: "cfp",
   2: "v",
-  3: "cfp",
+  3: "cfpr",
   4: "_egios",
-  5: "$"
+  5: "$",
+  6: "f"
 };
 
 var indexSectionNames =
@@ -15,7 +16,8 @@ var indexSectionNames =
   2: "namespaces",
   3: "files",
   4: "functions",
-  5: "variables"
+  5: "variables",
+  6: "pages"
 };
 
 var indexSectionLabels =
@@ -25,6 +27,7 @@ var indexSectionLabels =
   2: "名前空間",
   3: "ファイル",
   4: "関数",
-  5: "変数"
+  5: "変数",
+  6: "ページ"
 };
 
