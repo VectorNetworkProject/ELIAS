@@ -22,12 +22,14 @@ abstract class FrameworkCommand extends Command
      * FrameworkCommand constructor.
      *
      * @param PluginBase $plugin
-     * @param string     $name
+     * @param string     $name    コマンドの名前
+     * @param bool       $isAdmin コマンドの権限設定
      */
-    public function __construct(PluginBase $plugin, string $name)
+    public function __construct(PluginBase $plugin, string $name, $isAdmin = false)
     {
-        parent::__construct($name);
         $this->plugin = $plugin;
+        $this->PermissionManager()->add($name, $this->description, $isAdmin);
+        parent::__construct($name);
     }
 
     /**
@@ -71,5 +73,13 @@ abstract class FrameworkCommand extends Command
     public function getPlugin(): PluginBase
     {
         return $this->plugin;
+    }
+
+    /**
+     * @return FrameworkPermission
+     */
+    public function PermissionManager(): FrameworkPermission
+    {
+        return new FrameworkPermission($this->plugin->getName());
     }
 }

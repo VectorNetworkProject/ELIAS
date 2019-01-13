@@ -1,5 +1,10 @@
 var searchData=
 [
-  ['getoption',['getOption',['../d1/d9d/class_vector_network_project_1_1_framework_1_1util_1_1_constants.xhtml#ab7324a21f76d2bbeabb4bada5735cfab',1,'VectorNetworkProject::Framework::util::Constants']]],
-  ['getplugin',['getPlugin',['../dc/ddd/class_vector_network_project_1_1_framework_1_1command_1_1_framework_command.xhtml#a5d5c3605be98f98c43bf7b3e575cc8d2',1,'VectorNetworkProject\Framework\command\FrameworkCommand\getPlugin()'],['../d6/d2d/class_vector_network_project_1_1_framework_1_1command_1_1_player_command.xhtml#a4286d573b540efefcf8dba87845a12dd',1,'VectorNetworkProject\Framework\command\PlayerCommand\getPlugin()'],['../d2/d73/class_vector_network_project_1_1_framework_1_1_framework_core.xhtml#a699de0f8f20f8d9ce21afaafc13acefd',1,'VectorNetworkProject\Framework\FrameworkCore\getPlugin()']]]
+  ['frameworkcommand',['FrameworkCommand',['../dc/ddd/class_vector_network_project_1_1_framework_1_1command_1_1_framework_command.xhtml',1,'VectorNetworkProject::Framework::command']]],
+  ['frameworkcommand_2ephp',['FrameworkCommand.php',['../d3/dd1/_framework_command_8php.xhtml',1,'']]],
+  ['frameworkcore',['FrameworkCore',['../d2/d73/class_vector_network_project_1_1_framework_1_1_framework_core.xhtml',1,'VectorNetworkProject::Framework']]],
+  ['frameworkcore_2ephp',['FrameworkCore.php',['../d8/d7a/_framework_core_8php.xhtml',1,'']]],
+  ['frameworkpermission',['FrameworkPermission',['../d3/dad/class_vector_network_project_1_1_framework_1_1command_1_1_framework_permission.xhtml',1,'VectorNetworkProject::Framework::command']]],
+  ['frameworkpermission_2ephp',['FrameworkPermission.php',['../d5/d21/_framework_permission_8php.xhtml',1,'']]],
+  ['framework',['Framework',['../index.xhtml',1,'']]]
 ];
