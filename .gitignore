@@ -26,3 +26,4 @@
 
 # JetBrains IDE
 .idea/dictionaries/*
+\.idea/workspace\.xml
