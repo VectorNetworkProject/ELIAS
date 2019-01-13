@@ -10,7 +10,7 @@ namespace VectorNetworkProject\Framework;
 use pocketmine\plugin\PluginBase;
 use VectorNetworkProject\Framework\util\Constants;
 
-class VectorFrameworkCore
+class FrameworkCore
 {
     /** @var PluginBase $plugin */
     private static $plugin;
