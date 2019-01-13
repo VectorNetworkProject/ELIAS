@@ -8,7 +8,6 @@
 
 namespace VectorNetworkProject\Framework\command;
 
-
 use pocketmine\permission\Permission;
 use pocketmine\permission\PermissionManager;
 
@@ -24,19 +23,19 @@ class FrameworkPermission
      */
     public function __construct(string $plugin)
     {
-        $this->permission = $plugin . '.framework.permission.';
+        $this->permission = $plugin.'.framework.permission.';
     }
 
     /**
      * @param string $name
      * @param string $description
-     * @param bool $isAdmin
+     * @param bool   $isAdmin
      *
      * @return bool
      */
-    public function add(string $name, $description = "", $isAdmin = false): bool
+    public function add(string $name, $description = '', $isAdmin = false): bool
     {
-        return PermissionManager::getInstance()->addPermission(new Permission($this->permission . $name, $description, $isAdmin ? Permission::DEFAULT_OP : Permission::DEFAULT_TRUE));
+        return PermissionManager::getInstance()->addPermission(new Permission($this->permission.$name, $description, $isAdmin ? Permission::DEFAULT_OP : Permission::DEFAULT_TRUE));
     }
 
     /**

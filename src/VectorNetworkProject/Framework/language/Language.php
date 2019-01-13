@@ -8,8 +8,6 @@
 
 namespace VectorNetworkProject\Framework\language;
 
-
 class Language
 {
-
 }

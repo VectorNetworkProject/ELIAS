@@ -8,7 +8,6 @@
 
 namespace VectorNetworkProject\Framework\util;
 
-
 class Constants
 {
     public static $option = [
