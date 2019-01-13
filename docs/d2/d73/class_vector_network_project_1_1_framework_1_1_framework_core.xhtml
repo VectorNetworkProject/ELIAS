@@ -91,6 +91,7 @@ $(document).ready(function(){initNavTree('d2/d73/class_vector_network_project_1_
   <div class="summary">
 <a href="#pub-methods">公開メンバ関数</a> &#124;
 <a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="#pri-static-attribs">静的非公開変数類</a> &#124;
 <a href="../../d1/d93/class_vector_network_project_1_1_framework_1_1_framework_core-members.xhtml">全メンバ一覧</a>  </div>
   <div class="headertitle">
 <div class="title">VectorNetworkProject\Framework\FrameworkCore クラス</div>  </div>
@@ -106,6 +107,11 @@ $(document).ready(function(){initNavTree('d2/d73/class_vector_network_project_1_
 静的公開メンバ関数</h2></td></tr>
 <tr class="memitem:a699de0f8f20f8d9ce21afaafc13acefd"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d73/class_vector_network_project_1_1_framework_1_1_framework_core.xhtml#a699de0f8f20f8d9ce21afaafc13acefd">getPlugin</a> ()</td></tr>
 <tr class="separator:a699de0f8f20f8d9ce21afaafc13acefd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+静的非公開変数類</h2></td></tr>
+<tr class="memitem:aaabb92a519d05c9da573e6ff2f4ad455"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d73/class_vector_network_project_1_1_framework_1_1_framework_core.xhtml#aaabb92a519d05c9da573e6ff2f4ad455">$plugin</a></td></tr>
+<tr class="separator:aaabb92a519d05c9da573e6ff2f4ad455"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock">
@@ -166,13 +172,38 @@ $(document).ready(function(){initNavTree('d2/d73/class_vector_network_project_1_
 </div><div class="memdoc">
 
 <p class="definition"> <a class="el" href="../../d8/d7a/_framework_core_8php_source.xhtml">FrameworkCore.php</a> の <a class="el" href="../../d8/d7a/_framework_core_8php_source.xhtml#l00018">18</a> 行目に定義があります。</p>
-<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    {</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        self::$plugin = $plugin;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordflow">if</span> ($config) {</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <a class="code" href="../../d1/d9d/class_vector_network_project_1_1_framework_1_1util_1_1_constants.xhtml#a8e2af32633104df87ecd6c9449e8c3d0">Constants::setOption</a>($config);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        }</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div><div class="ttc" id="class_vector_network_project_1_1_framework_1_1util_1_1_constants_xhtml_a8e2af32633104df87ecd6c9449e8c3d0"><div class="ttname"><a href="../../d1/d9d/class_vector_network_project_1_1_framework_1_1util_1_1_constants.xhtml#a8e2af32633104df87ecd6c9449e8c3d0">VectorNetworkProject\Framework\util\Constants\setOption</a></div><div class="ttdeci">static setOption(array $option)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d55/_constants_8php_source.xhtml#l00029">Constants.php:29</a></div></div>
+<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    {</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        self::$plugin = <a class="code" href="../../d2/d73/class_vector_network_project_1_1_framework_1_1_framework_core.xhtml#aaabb92a519d05c9da573e6ff2f4ad455">$plugin</a>;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordflow">if</span> ($config) {</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <a class="code" href="../../d1/d9d/class_vector_network_project_1_1_framework_1_1util_1_1_constants.xhtml#a8e2af32633104df87ecd6c9449e8c3d0">Constants::setOption</a>($config);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        }</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div><div class="ttc" id="class_vector_network_project_1_1_framework_1_1util_1_1_constants_xhtml_a8e2af32633104df87ecd6c9449e8c3d0"><div class="ttname"><a href="../../d1/d9d/class_vector_network_project_1_1_framework_1_1util_1_1_constants.xhtml#a8e2af32633104df87ecd6c9449e8c3d0">VectorNetworkProject\Framework\util\Constants\setOption</a></div><div class="ttdeci">static setOption(array $option)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d55/_constants_8php_source.xhtml#l00029">Constants.php:29</a></div></div>
+<div class="ttc" id="class_vector_network_project_1_1_framework_1_1_framework_core_xhtml_aaabb92a519d05c9da573e6ff2f4ad455"><div class="ttname"><a href="../../d2/d73/class_vector_network_project_1_1_framework_1_1_framework_core.xhtml#aaabb92a519d05c9da573e6ff2f4ad455">VectorNetworkProject\Framework\FrameworkCore\$plugin</a></div><div class="ttdeci">static $plugin</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d7a/_framework_core_8php_source.xhtml#l00016">FrameworkCore.php:16</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d73/class_vector_network_project_1_1_framework_1_1_framework_core_af40cb69a433b64347459d6c7d96ebf08_cgraph.svg" width="440" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d73/class_vector_network_project_1_1_framework_1_1_framework_core_af40cb69a433b64347459d6c7d96ebf08_cgraph.svg" width="440" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
 </div>
 </div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="aaabb92a519d05c9da573e6ff2f4ad455"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaabb92a519d05c9da573e6ff2f4ad455">&#9670;&nbsp;</a></span>$plugin</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">VectorNetworkProject\Framework\FrameworkCore::$plugin</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../d8/d7a/_framework_core_8php_source.xhtml">FrameworkCore.php</a> の <a class="el" href="../../d8/d7a/_framework_core_8php_source.xhtml#l00016">16</a> 行目に定義があります。</p>
 
 </div>
 </div>

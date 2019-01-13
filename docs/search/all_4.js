@@ -1,8 +1,4 @@
 var searchData=
 [
-  ['frameworkcommand',['FrameworkCommand',['../dc/ddd/class_vector_network_project_1_1_framework_1_1command_1_1_framework_command.xhtml',1,'VectorNetworkProject::Framework::command']]],
-  ['frameworkcommand_2ephp',['FrameworkCommand.php',['../d3/dd1/_framework_command_8php.xhtml',1,'']]],
-  ['frameworkcore',['FrameworkCore',['../d2/d73/class_vector_network_project_1_1_framework_1_1_framework_core.xhtml',1,'VectorNetworkProject::Framework']]],
-  ['frameworkcore_2ephp',['FrameworkCore.php',['../d8/d7a/_framework_core_8php.xhtml',1,'']]],
-  ['framework',['Framework',['../index.xhtml',1,'']]]
+  ['execute',['execute',['../dc/ddd/class_vector_network_project_1_1_framework_1_1command_1_1_framework_command.xhtml#a1610bbd5d6bbecbedc64bb0797a8a452',1,'VectorNetworkProject\Framework\command\FrameworkCommand\execute()'],['../d6/d2d/class_vector_network_project_1_1_framework_1_1command_1_1_player_command.xhtml#adc4f6ab170cc6f978980683207b6a2a8',1,'VectorNetworkProject\Framework\command\PlayerCommand\execute()']]]
 ];
