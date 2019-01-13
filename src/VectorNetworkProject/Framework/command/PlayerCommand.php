@@ -8,7 +8,6 @@
 
 namespace VectorNetworkProject\Framework\command;
 
-
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\command\utils\InvalidCommandSyntaxException;
@@ -24,7 +23,7 @@ abstract class PlayerCommand extends Command
      * FrameworkCommand constructor.
      *
      * @param PluginBase $plugin
-     * @param string $name
+     * @param string     $name
      */
     public function __construct(PluginBase $plugin, string $name)
     {
@@ -34,8 +33,8 @@ abstract class PlayerCommand extends Command
 
     /**
      * @param CommandSender $sender
-     * @param string $commandLabel
-     * @param string[] $args
+     * @param string        $commandLabel
+     * @param string[]      $args
      *
      * @return mixed
      */
@@ -51,12 +50,13 @@ abstract class PlayerCommand extends Command
 
         if (!$sender instanceof Player) {
             $this->plugin->getLogger()->error('このコマンドはプレイヤーのみ実行出来ます。');
+
             return false;
         }
 
         $success = $this->onCommand($sender, $args, $commandLabel);
 
-        if (!$success and $this->usageMessage !== "") {
+        if (!$success and $this->usageMessage !== '') {
             throw new InvalidCommandSyntaxException();
         }
 
@@ -65,8 +65,8 @@ abstract class PlayerCommand extends Command
 
     /**
      * @param CommandSender $sender
-     * @param array $args
-     * @param string $commandLabel
+     * @param array         $args
+     * @param string        $commandLabel
      *
      * @return bool
      */

@@ -5,6 +5,7 @@
  * GitHub: https://github.com/VectorNetworkProject/Framework
  * Website: https://www.vector-network.tk
  */
+
 namespace VectorNetworkProject\Framework;
 
 use pocketmine\plugin\PluginBase;
