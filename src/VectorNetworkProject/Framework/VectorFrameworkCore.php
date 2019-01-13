@@ -13,11 +13,11 @@ use VectorNetworkProject\Framework\util\Constants;
 class VectorFrameworkCore
 {
     /** @var PluginBase $plugin */
-    private $plugin;
+    private static $plugin;
 
-    public function __construct(PluginBase $plugin, array $config)
+    public function init(PluginBase $plugin, array $config)
     {
-        $this->plugin = $plugin;
+        self::$plugin = $plugin;
         if ($config) {
             Constants::setOption($config);
         }
@@ -26,8 +26,8 @@ class VectorFrameworkCore
     /**
      * @return PluginBase
      */
-    public function getPlugin(): PluginBase
+    public static function getPlugin(): PluginBase
     {
-        return $this->plugin;
+        return self::$plugin;
     }
 }
