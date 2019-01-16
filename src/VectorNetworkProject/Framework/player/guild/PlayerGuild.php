@@ -8,8 +8,6 @@
 
 namespace VectorNetworkProject\Framework\player\guild;
 
-
 class PlayerGuild
 {
-
 }

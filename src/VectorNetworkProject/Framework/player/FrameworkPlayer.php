@@ -14,7 +14,7 @@ class FrameworkPlayer
 {
     /** @var Player $player */
     private $player;
-    
+
     public function __construct(Player $player)
     {
         $this->player = $player;
@@ -29,7 +29,7 @@ class FrameworkPlayer
     {
         // TODO:
     }
-    
+
     /**
      * @return Player
      */
