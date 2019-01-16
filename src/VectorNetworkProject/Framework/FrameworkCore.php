@@ -16,7 +16,11 @@ class FrameworkCore
     /** @var PluginBase $plugin */
     private static $plugin;
 
-    public function init(PluginBase $plugin, array $config)
+    /**
+     * @param PluginBase $plugin
+     * @param array|null $config
+     */
+    public function init(PluginBase $plugin, ?array $config)
     {
         self::$plugin = $plugin;
         if ($config) {
