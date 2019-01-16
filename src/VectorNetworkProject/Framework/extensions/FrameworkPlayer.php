@@ -12,5 +12,4 @@ use pocketmine\Player;
 
 class FrameworkPlayer extends Player
 {
-
 }
