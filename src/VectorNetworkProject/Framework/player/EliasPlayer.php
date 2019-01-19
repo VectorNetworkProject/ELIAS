@@ -15,7 +15,7 @@ class EliasPlayer
 {
     /** @var Player $player */
     private $player;
-    
+
     public function __construct(Player $player)
     {
         $this->player = $player;
@@ -35,7 +35,7 @@ class EliasPlayer
     {
         return EliasCore::getPlugin()->getDataFolder().'user/'.$this->getPlayer()->getXuid().'/';
     }
-    
+
     /**
      * @return Player
      */

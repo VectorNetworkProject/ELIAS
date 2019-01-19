@@ -8,7 +8,6 @@
 
 namespace VectorNetworkProject\Framework\provider\base;
 
-
 class ProviderBase
 {
     /** @var string $directory */
@@ -19,7 +18,7 @@ class ProviderBase
 
     public function __construct(string $directory, string $file, string $type)
     {
-        $this->directory = $directory . $type . '/';
+        $this->directory = $directory.$type.'/';
         $this->file = $file;
     }
 

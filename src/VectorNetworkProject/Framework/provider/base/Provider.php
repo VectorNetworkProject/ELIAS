@@ -8,7 +8,6 @@
 
 namespace VectorNetworkProject\Framework\provider\base;
 
-
 interface Provider
 {
     public function init(): void;
@@ -30,12 +29,14 @@ interface Provider
 
     /**
      * @param string $table
+     *
      * @return mixed
      */
     public function getAll(string $table);
 
     /**
      * @param string $table
+     *
      * @return mixed
      */
     public function getKeys(string $table);
@@ -43,6 +44,7 @@ interface Provider
     /**
      * @param string $table
      * @param string $key
+     *
      * @return mixed
      */
     public function get(string $table, string $key);
@@ -50,6 +52,7 @@ interface Provider
     /**
      * @param string $table
      * @param string $key
+     *
      * @return bool
      */
     public function has(string $table, string $key): bool;
@@ -57,6 +60,7 @@ interface Provider
     /**
      * @param string $table
      * @param $data
+     *
      * @return mixed
      */
     public function create(string $table, $data);
@@ -64,6 +68,7 @@ interface Provider
     /**
      * @param string $table
      * @param $data
+     *
      * @return mixed
      */
     public function update(string $table, $data);
@@ -71,6 +76,7 @@ interface Provider
     /**
      * @param string $table
      * @param $data
+     *
      * @return mixed
      */
     public function delete(string $table, $data);

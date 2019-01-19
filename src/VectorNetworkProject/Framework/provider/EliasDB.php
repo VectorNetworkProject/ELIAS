@@ -8,7 +8,6 @@
 
 namespace VectorNetworkProject\Framework\provider;
 
-
 use VectorNetworkProject\Framework\provider\base\Provider;
 use VectorNetworkProject\Framework\provider\base\ProviderBase;
 
@@ -16,6 +15,7 @@ class EliasDB extends ProviderBase implements Provider
 {
     /**
      * EliasDB constructor.
+     *
      * @param string $directory
      * @param string $file
      * @param string $type
@@ -62,6 +62,7 @@ class EliasDB extends ProviderBase implements Provider
 
     /**
      * @param string $table
+     *
      * @return mixed
      */
     public function getAll(string $table)
@@ -71,6 +72,7 @@ class EliasDB extends ProviderBase implements Provider
 
     /**
      * @param string $table
+     *
      * @return mixed
      */
     public function getKeys(string $table)
@@ -81,6 +83,7 @@ class EliasDB extends ProviderBase implements Provider
     /**
      * @param string $table
      * @param string $key
+     *
      * @return mixed
      */
     public function get(string $table, string $key)
@@ -91,6 +94,7 @@ class EliasDB extends ProviderBase implements Provider
     /**
      * @param string $table
      * @param string $key
+     *
      * @return bool
      */
     public function has(string $table, string $key): bool
@@ -101,6 +105,7 @@ class EliasDB extends ProviderBase implements Provider
     /**
      * @param string $table
      * @param $data
+     *
      * @return mixed
      */
     public function create(string $table, $data)
@@ -111,6 +116,7 @@ class EliasDB extends ProviderBase implements Provider
     /**
      * @param string $table
      * @param $data
+     *
      * @return mixed
      */
     public function update(string $table, $data)
@@ -121,6 +127,7 @@ class EliasDB extends ProviderBase implements Provider
     /**
      * @param string $table
      * @param $data
+     *
      * @return mixed
      */
     public function delete(string $table, $data)
