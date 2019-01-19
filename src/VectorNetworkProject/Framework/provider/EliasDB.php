@@ -147,6 +147,6 @@ class EliasDB extends ProviderBase implements Provider
      */
     private function encode(): ?string
     {
-        return json_encode($this->getFilePath());
+        return json_encode($this->getFilePath(), JSON_PRETTY_PRINT);
     }
 }
