@@ -134,11 +134,17 @@ class EliasDB extends ProviderBase implements Provider
         // TODO: Implement delete() method.
     }
 
+    /**
+     * @return array|null
+     */
     private function decode(): ?array
     {
         return json_decode($this->getFilePath());
     }
 
+    /**
+     * @return string|null
+     */
     private function encode(): ?string
     {
         return json_encode($this->getFilePath());
