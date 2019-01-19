@@ -20,7 +20,7 @@ abstract class PlayerCommand extends Command
     private $plugin;
 
     /**
-     * FrameworkCommand constructor.
+     * EliasCommand constructor.
      *
      * @param PluginBase $plugin
      * @param string     $name    コマンドの名前
@@ -83,10 +83,10 @@ abstract class PlayerCommand extends Command
     }
 
     /**
-     * @return FrameworkPermission
+     * @return EliasPermission
      */
-    public function PermissionManager(): FrameworkPermission
+    public function PermissionManager(): EliasPermission
     {
-        return new FrameworkPermission($this->plugin->getName());
+        return new EliasPermission($this->plugin->getName());
     }
 }

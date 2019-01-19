@@ -9,8 +9,9 @@
 namespace VectorNetworkProject\Framework\player;
 
 use pocketmine\Player;
+use VectorNetworkProject\Framework\EliasCore;
 
-class FrameworkPlayer
+class EliasPlayer
 {
     /** @var Player $player */
     private $player;
@@ -28,6 +29,11 @@ class FrameworkPlayer
     public function getLanguage()
     {
         // TODO:
+    }
+
+    public function getDataDirectory(): string
+    {
+        return EliasCore::getPlugin()->getDataFolder().'user/'.$this->getPlayer()->getXuid().'/';
     }
     
     /**

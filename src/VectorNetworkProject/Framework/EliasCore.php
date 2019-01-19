@@ -9,12 +9,16 @@
 namespace VectorNetworkProject\Framework;
 
 use pocketmine\plugin\PluginBase;
+use pocketmine\utils\MainLogger;
 use VectorNetworkProject\Framework\util\Constants;
 
-class FrameworkCore
+class EliasCore
 {
     /** @var PluginBase $plugin */
     private static $plugin;
+
+    /** @var MainLogger $logger */
+    private static $logger;
 
     /**
      * @param PluginBase $plugin
@@ -23,8 +27,12 @@ class FrameworkCore
     public function init(PluginBase $plugin, ?array $config)
     {
         self::$plugin = $plugin;
+        self::$logger = new MainLogger(self::getPlugin()->getDataFolder().'elias.log');
         if ($config) {
             Constants::setOption($config);
+        } else {
+            self::$logger->alert('Option is null');
+            self::$plugin->setEnabled(false);
         }
     }
 
@@ -34,5 +42,13 @@ class FrameworkCore
     public static function getPlugin(): PluginBase
     {
         return self::$plugin;
+    }
+
+    /**
+     * @return MainLogger
+     */
+    public static function getLogger(): MainLogger
+    {
+        return self::$logger;
     }
 }

@@ -13,13 +13,13 @@ use pocketmine\command\CommandSender;
 use pocketmine\command\utils\InvalidCommandSyntaxException;
 use pocketmine\plugin\PluginBase;
 
-abstract class FrameworkCommand extends Command
+abstract class EliasCommand extends Command
 {
     /** @var PluginBase $plugin */
     private $plugin;
 
     /**
-     * FrameworkCommand constructor.
+     * EliasCommand constructor.
      *
      * @param PluginBase $plugin
      * @param string     $name    コマンドの名前
@@ -76,10 +76,10 @@ abstract class FrameworkCommand extends Command
     }
 
     /**
-     * @return FrameworkPermission
+     * @return EliasPermission
      */
-    public function PermissionManager(): FrameworkPermission
+    public function PermissionManager(): EliasPermission
     {
-        return new FrameworkPermission($this->plugin->getName());
+        return new EliasPermission($this->plugin->getName());
     }
 }
