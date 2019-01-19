@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['remove',['remove',['../d3/dad/class_vector_network_project_1_1_framework_1_1command_1_1_framework_permission.xhtml#aa5559c3797828638847ae2c691953974',1,'VectorNetworkProject::Framework::command::FrameworkPermission']]]
+  ['init',['init',['../d0/d48/class_vector_network_project_1_1_framework_1_1_elias_core.xhtml#a11c9fb10fdc11d26013044e9ae201478',1,'VectorNetworkProject\Framework\EliasCore\init()'],['../d9/dd5/interface_vector_network_project_1_1_framework_1_1provider_1_1base_1_1_provider.xhtml#a157f86ab55d7ca0a0ca020952a144ee6',1,'VectorNetworkProject\Framework\provider\base\Provider\init()'],['../d0/dfa/class_vector_network_project_1_1_framework_1_1provider_1_1_elias_d_b.xhtml#a12ed8a98c8717dbe5ff3f07807d3ff5a',1,'VectorNetworkProject\Framework\provider\EliasDB\init()']]]
 ];

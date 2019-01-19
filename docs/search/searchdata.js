@@ -1,12 +1,11 @@
 var indexSectionsWithContent =
 {
-  0: "$_acefgiloprsv",
-  1: "cflp",
+  0: "$_acdeghiloprsuv",
+  1: "celp",
   2: "v",
-  3: "cflpr",
-  4: "_aegioprs",
-  5: "$",
-  6: "f"
+  3: "celpr",
+  4: "_acdeghioprsu",
+  5: "$"
 };
 
 var indexSectionNames =
@@ -16,8 +15,7 @@ var indexSectionNames =
   2: "namespaces",
   3: "files",
   4: "functions",
-  5: "variables",
-  6: "pages"
+  5: "variables"
 };
 
 var indexSectionLabels =
@@ -27,7 +25,6 @@ var indexSectionLabels =
   2: "名前空間",
   3: "ファイル",
   4: "関数",
-  5: "変数",
-  6: "ページ"
+  5: "変数"
 };
 

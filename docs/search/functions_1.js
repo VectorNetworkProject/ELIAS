@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['add',['add',['../d3/dad/class_vector_network_project_1_1_framework_1_1command_1_1_framework_permission.xhtml#a61d4aaed47263633054694b12df14443',1,'VectorNetworkProject::Framework::command::FrameworkPermission']]]
+  ['add',['add',['../d4/dde/class_vector_network_project_1_1_framework_1_1command_1_1_elias_permission.xhtml#aa99ffc06756a3f568db78add1168b02e',1,'VectorNetworkProject::Framework::command::EliasPermission']]]
 ];

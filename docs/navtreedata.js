@@ -23,7 +23,7 @@ for the JavaScript code in this file
 */
 var NAVTREE =
 [
-  [ "Framework", "index.xhtml", [
+  [ "Framework - ELIAS", "index.xhtml", [
     [ "名前空間", "namespaces.xhtml", [
       [ "名前空間一覧", "namespaces.xhtml", "namespaces_dup" ]
     ] ],
