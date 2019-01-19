@@ -18,11 +18,10 @@ class EliasDB extends ProviderBase implements Provider
      *
      * @param string $directory
      * @param string $file
-     * @param string $type
      */
-    public function __construct(string $directory, string $file, string $type)
+    public function __construct(string $directory, string $file)
     {
-        parent::__construct($directory, $file, $type);
+        parent::__construct($directory, $file, 'json');
     }
 
     public function init(): void
@@ -133,5 +132,15 @@ class EliasDB extends ProviderBase implements Provider
     public function delete(string $table, $data)
     {
         // TODO: Implement delete() method.
+    }
+
+    private function decode(): ?array
+    {
+        return json_decode($this->getFilePath());
+    }
+
+    private function encode(): ?string
+    {
+        return json_encode($this->getFilePath());
     }
 }

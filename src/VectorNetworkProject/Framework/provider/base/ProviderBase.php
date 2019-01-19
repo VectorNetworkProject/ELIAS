@@ -16,10 +16,17 @@ class ProviderBase
     /** @var string $file */
     private $file;
 
-    public function __construct(string $directory, string $file, string $type)
+    /**
+     * ProviderBase constructor.
+     *
+     * @param string $directory
+     * @param string $file
+     * @param string $extension
+     */
+    public function __construct(string $directory, string $file, string $extension)
     {
-        $this->directory = $directory.$type.'/';
-        $this->file = $file;
+        $this->directory = $directory.$extension.'/';
+        $this->file = $file.'.'.$extension;
     }
 
     /**
