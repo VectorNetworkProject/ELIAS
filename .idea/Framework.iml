@@ -8,6 +8,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/daverandom/callback-validator" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/fgrosse/phpasn1" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/mdanter/ecc" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/particle/validator" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/pocketmine/binaryutils" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/pocketmine/math" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/pocketmine/nbt" />
