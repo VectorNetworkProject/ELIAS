@@ -10,8 +10,6 @@ namespace VectorNetworkProject\Framework\provider\base;
 
 interface Provider
 {
-    public function init(): void;
-
     /**
      * @return bool
      */
