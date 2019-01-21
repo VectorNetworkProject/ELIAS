@@ -18,22 +18,23 @@ class Constants
                 'webhook' => [
                     'error-report' => [
                         'enabled' => false,
-                        'url' => null
+                        'url'     => null,
                     ],
                     'crash-report' => [
                         'enabled' => false,
-                        'url' => null
-                    ]
-                ]
-            ]
+                        'url'     => null,
+                    ],
+                ],
+            ],
         ],
         'provider' => [
-            'user' => []
-        ]
+            'user' => [],
+        ],
     ];
 
     /**
      * @param string $key
+     *
      * @return mixed
      *
      * @example Constants::getOption('provider.user'); // array()
@@ -44,12 +45,12 @@ class Constants
             return self::$option[$key];
         }
 
-        $vars = explode(".", $key);
+        $vars = explode('.', $key);
         $keys = array_shift($vars);
         if (isset(self::$option[$keys])) {
             $keys = self::$option[$keys];
         } else {
-            return null;
+            return;
         }
 
         while (count($vars) > 0) {
@@ -57,7 +58,7 @@ class Constants
             if (is_array($keys) && isset($keys[$baseKey])) {
                 $keys = $keys[$baseKey];
             } else {
-                return null;
+                return;
             }
         }
 

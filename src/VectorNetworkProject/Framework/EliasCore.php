@@ -9,7 +9,6 @@
 namespace VectorNetworkProject\Framework;
 
 use pocketmine\plugin\PluginBase;
-use pocketmine\utils\MainLogger;
 use VectorNetworkProject\Framework\util\Constants;
 
 class EliasCore
