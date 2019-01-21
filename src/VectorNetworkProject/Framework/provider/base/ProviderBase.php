@@ -16,6 +16,9 @@ class ProviderBase
     /** @var string $file */
     private $file;
 
+    /** @var array $storeData */
+    protected $cacheData;
+
     /**
      * ProviderBase constructor.
      *
