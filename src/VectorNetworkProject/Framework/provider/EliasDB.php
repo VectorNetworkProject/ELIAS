@@ -18,14 +18,14 @@ class EliasDB extends ProviderBase implements Provider
      *
      * @param string $directory
      * @param string $file
-     * @param string $type
      */
-    public function __construct(string $directory, string $file, string $type)
+    public function __construct(string $directory, string $file)
     {
-        parent::__construct($directory, $file, $type);
+        parent::__construct($directory, $file, 'json');
+        $this->init();
     }
 
-    public function init(): void
+    private function init(): void
     {
         if (!file_exists($this->getDirectory())) {
             @mkdir($this->getDirectory());
@@ -67,7 +67,7 @@ class EliasDB extends ProviderBase implements Provider
      */
     public function getAll(string $table)
     {
-        // TODO: Implement getAll() method.
+        return $this->decode();
     }
 
     /**
@@ -77,7 +77,7 @@ class EliasDB extends ProviderBase implements Provider
      */
     public function getKeys(string $table)
     {
-        // TODO: Implement getKeys() method.
+        return array_keys($this->decode());
     }
 
     /**
@@ -133,5 +133,21 @@ class EliasDB extends ProviderBase implements Provider
     public function delete(string $table, $data)
     {
         // TODO: Implement delete() method.
+    }
+
+    /**
+     * @return array|null
+     */
+    private function decode(): ?array
+    {
+        return json_decode(file_get_contents($this->getFilePath()), true);
+    }
+
+    /**
+     * @return string|null
+     */
+    private function encode(): ?string
+    {
+        return json_encode($this->getFilePath(), JSON_PRETTY_PRINT);
     }
 }
