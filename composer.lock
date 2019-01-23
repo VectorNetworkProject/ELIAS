@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4a8d5f373519365510b766b7a6992e03",
+    "content-hash": "caa9e2fe89bdb91dd16ec79db6f3933f",
     "packages": [
         {
             "name": "adhocore/json-comment",
@@ -374,11 +374,11 @@
         },
         {
             "name": "pocketmine/pocketmine-mp",
-            "version": "3.5.6",
+            "version": "3.5.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pmmp/PocketMine-MP",
-                "reference": "d4851a8f1f076856a25daafa6796f572c909a905"
+                "reference": "4b8e4123afb7ab0b0a9798c23a45e18d2a51c1c0"
             },
             "require": {
                 "adhocore/json-comment": "^0.0.7",
@@ -427,7 +427,7 @@
             ],
             "description": "A server software for Minecraft: Pocket Edition written in PHP",
             "homepage": "https://pmmp.io",
-            "time": "2019-01-19T17:33:07+00:00"
+            "time": "2019-01-22T22:13:35+00:00"
         },
         {
             "name": "pocketmine/raklib",
