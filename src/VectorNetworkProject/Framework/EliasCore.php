@@ -9,6 +9,7 @@
 namespace VectorNetworkProject\Framework;
 
 use pocketmine\plugin\PluginBase;
+use VectorNetworkProject\Framework\command\defaults\PingCommand;
 use VectorNetworkProject\Framework\util\Constants;
 
 class EliasCore
@@ -25,6 +26,12 @@ class EliasCore
         self::$plugin = $plugin;
         if ($config) {
             Constants::setOption($config);
+        }
+
+        if (Constants::getOption('commands')) {
+            $plugin->getServer()->getCommandMap()->registerAll('elias', [
+                new PingCommand($plugin, 'ping'),
+            ]);
         }
     }
 
