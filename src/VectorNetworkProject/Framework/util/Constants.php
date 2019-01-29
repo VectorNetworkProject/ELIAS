@@ -35,7 +35,8 @@ class Constants
 
     /**
      * @param string $key
-     * @param null $return
+     * @param null   $return
+     *
      * @return mixed
      *
      * @example Constants::getOption('provider.user'); // array()
