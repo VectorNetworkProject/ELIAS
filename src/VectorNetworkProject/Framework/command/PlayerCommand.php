@@ -66,13 +66,13 @@ abstract class PlayerCommand extends Command
     }
 
     /**
-     * @param CommandSender $sender
+     * @param Player $sender
      * @param array         $args
      * @param string        $commandLabel
      *
      * @return bool
      */
-    abstract public function onCommand(CommandSender $sender, array $args, string $commandLabel): bool;
+    abstract public function onCommand(Player $sender, array $args, string $commandLabel): bool;
 
     /**
      * @return PluginBase
