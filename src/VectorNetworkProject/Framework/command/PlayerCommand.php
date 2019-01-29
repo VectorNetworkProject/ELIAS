@@ -67,8 +67,8 @@ abstract class PlayerCommand extends Command
 
     /**
      * @param Player $sender
-     * @param array         $args
-     * @param string        $commandLabel
+     * @param array  $args
+     * @param string $commandLabel
      *
      * @return bool
      */

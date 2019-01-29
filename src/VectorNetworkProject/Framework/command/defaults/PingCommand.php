@@ -24,7 +24,7 @@ class PingCommand extends PlayerCommand
 
     /**
      * @param Player $sender
-     * @param array $args
+     * @param array  $args
      * @param string $commandLabel
      *
      * @return bool

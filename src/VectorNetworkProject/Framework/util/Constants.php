@@ -51,7 +51,7 @@ class Constants
         if (isset(self::$option[$keys])) {
             $keys = self::$option[$keys];
         } else {
-            return null;
+            return;
         }
 
         while (count($vars) > 0) {
@@ -59,7 +59,7 @@ class Constants
             if (is_array($keys) && isset($keys[$baseKey])) {
                 $keys = $keys[$baseKey];
             } else {
-                return null;
+                return;
             }
         }
 
