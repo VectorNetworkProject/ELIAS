@@ -66,13 +66,13 @@ abstract class PlayerCommand extends Command
     }
 
     /**
-     * @param CommandSender $sender
-     * @param array         $args
-     * @param string        $commandLabel
+     * @param Player $sender
+     * @param array  $args
+     * @param string $commandLabel
      *
      * @return bool
      */
-    abstract public function onCommand(CommandSender $sender, array $args, string $commandLabel): bool;
+    abstract public function onCommand(Player $sender, array $args, string $commandLabel): bool;
 
     /**
      * @return PluginBase
@@ -83,10 +83,10 @@ abstract class PlayerCommand extends Command
     }
 
     /**
-     * @return EliasPermission
+     * @return EliasPermissionManager
      */
-    public function PermissionManager(): EliasPermission
+    public function PermissionManager(): EliasPermissionManager
     {
-        return new EliasPermission($this->plugin->getName());
+        return new EliasPermissionManager($this->plugin->getName());
     }
 }

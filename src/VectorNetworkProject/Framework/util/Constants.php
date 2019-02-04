@@ -30,16 +30,18 @@ class Constants
         'provider' => [
             'user' => [],
         ],
+        'commands' => true,
     ];
 
     /**
      * @param string $key
+     * @param null   $return
      *
      * @return mixed
      *
      * @example Constants::getOption('provider.user'); // array()
      */
-    public static function getOption(string $key)
+    public static function getOption(string $key, $return = null)
     {
         if (isset(self::$option[$key])) {
             return self::$option[$key];
@@ -50,7 +52,7 @@ class Constants
         if (isset(self::$option[$keys])) {
             $keys = self::$option[$keys];
         } else {
-            return;
+            return $return;
         }
 
         while (count($vars) > 0) {
@@ -58,7 +60,7 @@ class Constants
             if (is_array($keys) && isset($keys[$baseKey])) {
                 $keys = $keys[$baseKey];
             } else {
-                return;
+                return $return;
             }
         }
 

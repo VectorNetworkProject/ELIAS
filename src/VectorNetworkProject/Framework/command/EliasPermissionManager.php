@@ -11,13 +11,13 @@ namespace VectorNetworkProject\Framework\command;
 use pocketmine\permission\Permission;
 use pocketmine\permission\PermissionManager;
 
-class EliasPermission
+class EliasPermissionManager
 {
     /** @var string $permission */
     private $permission;
 
     /**
-     * EliasPermission constructor.
+     * EliasPermissionManager constructor.
      *
      * @param string $plugin
      */

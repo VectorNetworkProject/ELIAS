@@ -76,10 +76,10 @@ abstract class EliasCommand extends Command
     }
 
     /**
-     * @return EliasPermission
+     * @return EliasPermissionManager
      */
-    public function PermissionManager(): EliasPermission
+    public function PermissionManager(): EliasPermissionManager
     {
-        return new EliasPermission($this->plugin->getName());
+        return new EliasPermissionManager($this->plugin->getName());
     }
 }
