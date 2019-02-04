@@ -25,3 +25,12 @@ deploy:
   github_token: $GH_REPO_TOKEN
   on:
     branch: master
+
+after_success:
+  - cd travis
+  - chmod +x discord.sh
+  - ./discord.sh success $WEBHOOK_URL
+after_failure:
+  - cd travis
+  - chmod +x discord.sh
+  - ./discord.sh failure $WEBHOOK_URL
