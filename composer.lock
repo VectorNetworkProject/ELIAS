@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "18b3fc40f3a7bb90a48da0e3f0d165b6",
+    "content-hash": "388523620ca7a7d28ecdb82e3ef3e4bd",
     "packages": [
         {
             "name": "adhocore/json-comment",
@@ -431,11 +431,11 @@
         },
         {
             "name": "pocketmine/raklib",
-            "version": "0.12.1",
+            "version": "0.12.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pmmp/RakLib",
-                "reference": "334b469f2d0f070f17902d7ac584bea7c6149dc6"
+                "reference": "54a36d55eeba0a182e00439920ee2fcfa8c72bf3"
             },
             "require": {
                 "ext-bcmath": "*",
@@ -458,7 +458,7 @@
                 "GPL-3.0"
             ],
             "description": "A RakNet server implementation written in PHP",
-            "time": "2019-01-04T14:23:37+00:00"
+            "time": "2019-01-21T14:17:30+00:00"
         },
         {
             "name": "pocketmine/snooze",
